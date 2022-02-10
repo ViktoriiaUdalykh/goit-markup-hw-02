@@ -1,0 +1,20 @@
+:root {
+  /* основные шрифты */
+  --main-font: "Roboto", seans-serif;
+  /* темная тема*/
+  --acondary-dark-bg: #2f303a;
+
+  /* темная тема текст*/
+  --primary-dark-txt: #ffffff;
+
+  /* светлая тема*/
+  --acondary-ilght-bg: #e5e5e5;
+  --acondary-ilght-grey-bg: #f5f4fa;
+
+  /* светлая тема текст */
+  --primary-light-txt: #212121;
+  --primary-light-grey-txt: #757575;
+
+  /* яркий акцент*/
+  --accent-txt-cl: #2196f3;
+}
