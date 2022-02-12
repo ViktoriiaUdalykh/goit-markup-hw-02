@@ -1,6 +1,7 @@
 :root {
   /* основные шрифты */
-  --main-font: "Roboto", seans-serif;
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
   /* темная тема*/
   --acondary-dark-bg: #2f303a;
 
@@ -17,4 +18,194 @@
 
   /* яркий акцент*/
   --accent-txt-cl: #2196f3;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+[href^="./"] {
+  color: var(--primary-light-txt);
+}
+
+[href^="#"] {
+  color: var(--primary-light-txt);
+}
+
+[href*="+"] {
+  color: var(--primary-light-grey-txt);
+}
+
+[href*="https"] {
+  color: var(--primary-dark-txt);
+}
+
+/* header */
+.header-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  color: var(--accent-txt-cl);
+}
+
+.logo-studio {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  color: var(--primary-light-txt);
+}
+
+/* nav */
+.studio-nav-list,
+.studio-nav-list-link {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-light-txt);
+}
+/* hero */
+.btn {
+  background-color: var(--acondary-dark-bg);
+}
+
+.btn-title {
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+
+  color: var(--primary-dark-txt);
+}
+
+.btn-button {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  color: var(--primary-dark-txt);
+  background-color: var(--accent-txt-cl);
+}
+
+/* особенности */
+.peculiarities-title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-light-txt);
+}
+
+.peculiarities-text {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-light-grey-txt);
+}
+
+/* чем занимаемся */
+.we-doing-title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-light-txt);
+}
+
+/* Наша команда */
+.team-title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-light-txt);
+}
+
+.team-title-name {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-light-txt);
+}
+
+.team-list-text {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-light-grey-txt);
+}
+
+/* body */
+.body {
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-light-txt);
+}
+
+/* контакты */
+.contacts-list {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14em;
+}
+
+/* footer */
+.footer {
+  background-color: var(--acondary-dark-bg);
+}
+.footer-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  color: var(--accent-txt-cl);
+}
+
+.logo-studio {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  color: var(--primary-dark-txt);
 }
