@@ -15,6 +15,8 @@
   /* светлая тема текст */
   --primary-light-txt: #212121;
   --primary-light-grey-txt: #757575;
+  --primary-light-background: #f5f4f5;
+  --primary-light-botton-txt: #ffffff;
 
   /* яркий акцент*/
   --accent-txt-cl: #2196f3;
@@ -217,4 +219,49 @@ ul {
   text-decoration: none;
 
   color: var(--primary-dark-txt);
+}
+
+/* кнопки */
+.btn-text-Inside-list {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-dark-txt);
+  background-color: var(--primary-light-background);
+}
+
+button:hover {
+  color: var(--primary-light-botton-txt);
+  background-color: var(--accent-txt-cl);
+  border: 0;
+}
+
+button:focus {
+  background-color: var(--accent-txt-cl);
+  border: 0;
+}
+
+/* заголовки */
+
+.portfolio-title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--primary-light-txt);
+}
+
+.portfolio-text {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-light-grey-txt);
 }
