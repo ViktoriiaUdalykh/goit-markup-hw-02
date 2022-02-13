@@ -24,35 +24,25 @@
 
 a {
   text-decoration: none;
+  font-style: normal;
 }
 
 ul {
   list-style: none;
 }
 
-[href^="./"] {
+/* body */
+
+body {
+  font-family: var(--main-font);
+}
+
+.body {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+
   color: var(--primary-light-txt);
-}
-
-[href^="#"] {
-  color: var(--primary-light-txt);
-}
-
-[href*="+"] {
-  color: var(--primary-light-grey-txt);
-}
-
-[href*="https"] {
-  color: var(--primary-dark-txt);
-}
-
-.studio-link:hover {
-  text-decoration: underline;
-  color: var(--accent-txt-cl);
-}
-
-.studio-link:focus {
-  color: var(--accent-txt-cl);
 }
 
 /* header */
@@ -78,10 +68,29 @@ ul {
   color: var(--primary-light-txt);
 }
 
+/* контакты */
+.contacts-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14em;
+}
+
+.contacts-Inside-list-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0em;
+  text-decoration: none;
+
+  color: var(--primary-light-grey-txt);
+}
+
+.contacts-Inside-list-link:hover {
+  color: var(--accent-txt-cl);
+}
+
 /* nav */
-.studio-nav-list,
-.studio-nav-list-link {
-  font-family: "Roboto";
+.studio-nav-list {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -89,27 +98,50 @@ ul {
 
   color: var(--primary-light-txt);
 }
+.studio-nav-list-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-light-txt);
+}
+
+.studio-link {
+  color: var(--primary-light-txt);
+}
+
+.studio-link:hover {
+  color: var(--accent-txt-cl);
+}
+
+.studio-link:focus {
+  color: var(--accent-txt-cl);
+}
 /* hero */
+button {
+  color: inherit;
+}
 .btn {
   background-color: var(--acondary-dark-bg);
 }
 
 .btn-title {
-  font-family: "Roboto";
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
 
   color: var(--primary-dark-txt);
 }
 
 .btn-button {
-  font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  border: 0;
 
   color: var(--primary-dark-txt);
   background-color: var(--accent-txt-cl);
@@ -117,18 +149,16 @@ ul {
 
 /* особенности */
 .peculiarities-title {
-  font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 
   color: var(--primary-light-txt);
 }
 
 .peculiarities-text {
-  font-family: "Roboto";
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -138,7 +168,6 @@ ul {
 
 /* чем занимаемся */
 .we-doing-title {
-  font-family: "Roboto";
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -149,7 +178,6 @@ ul {
 
 /* Наша команда */
 .team-title {
-  font-family: "Roboto";
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -159,7 +187,6 @@ ul {
 }
 
 .team-title-name {
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -169,7 +196,6 @@ ul {
 }
 
 .team-list-text {
-  font-family: "Roboto";
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
@@ -177,28 +203,21 @@ ul {
   color: var(--primary-light-grey-txt);
 }
 
-/* body */
-.body {
-  font-family: "Roboto";
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.02em;
-
-  color: var(--primary-light-txt);
-}
-
-/* контакты */
-.contacts-list {
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14em;
-}
-
 /* footer */
 .footer {
   background-color: var(--acondary-dark-bg);
 }
+
+.footer-adress-inside-list-adress {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--primary-dark-txt);
+}
+
+.footer-adress-inside-list-adress:hover {
+  color: var(--accent-txt-cl);
+}
+
 .footer-logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -221,16 +240,18 @@ ul {
   color: var(--primary-dark-txt);
 }
 
+/* второй лист */
+
 /* кнопки */
 .btn-text-Inside-list {
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
 
-  color: var(--primary-dark-txt);
+  color: var(--primary-light-txt);
   background-color: var(--primary-light-background);
+  border: 0;
 }
 
 button:hover {
@@ -247,7 +268,6 @@ button:focus {
 /* заголовки */
 
 .portfolio-title {
-  font-family: "Roboto";
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -257,8 +277,6 @@ button:focus {
 }
 
 .portfolio-text {
-  font-family: "Roboto";
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
