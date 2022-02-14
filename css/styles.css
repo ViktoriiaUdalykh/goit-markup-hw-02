@@ -86,7 +86,7 @@ body {
 }
 
 .contacts-Inside-list-link:hover {
-  color: var(--accent-txt-cl);
+  rgba: (255, 255, 255, 0.6);
 }
 
 /* nav */
@@ -95,6 +95,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  font-family: inherit;
 
   color: var(--primary-light-txt);
 }
@@ -140,6 +141,7 @@ button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+  font-family: inherit;
   letter-spacing: 0.06em;
   border: 0;
 
@@ -251,7 +253,8 @@ button {
 
   color: var(--primary-light-txt);
   background-color: var(--primary-light-background);
-  border: 0;
+  border: none;
+  border-radius: 0;
 }
 
 button:hover {
